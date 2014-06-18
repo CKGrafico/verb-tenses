@@ -1,0 +1,33 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.config {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.config__filters{
+	float: left;
+	width: 25%;
+}
+
+.config__send, .config__filter {
+	float: left;
+}
+
+.config__send {
+	margin-right: 10px;
+}
+
+select {
+	width: 25%;
+	float: left;
+}
+
+.config__preview {
+	width: 25%;
+	float: right;
+}
