@@ -3,15 +3,21 @@ body, html {
 	padding: 0;
 }
 
+input,select {
+	padding: 5px;
+	font-size: 16px;
+}
+
 .config {
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1100px;
+	min-height: 38px;
 }
 
 .config__filters{
 	float: left;
-	width: 25%;
+	width: 24%;
 }
 
 .config__send, .config__filter {
@@ -19,15 +25,55 @@ body, html {
 }
 
 .config__send {
-	margin-right: 10px;
+	margin-right: 1%;
 }
 
 select {
-	width: 25%;
+	width: 20%;
+	margin-right: 1%;
 	float: left;
 }
 
 .config__preview {
-	width: 25%;
-	float: right;
+	width: 24%;
+	float: left;
+	font-size: 16px;
+	font-style: italic;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	font-weight: bold;
+}
+/* medias */
+@media screen and (max-width: 1050px) {
+	.config__filters{
+		width: 29%;
+	}
+
+	.config__preview {
+		width: 19%;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.config__filters{
+		width: 100%;
+	}
+	.config__person, .config__verb, .config__preview {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.config__filters{
+		margin: 5px;
+	}
+	.config__person, .config__verb{
+		width: 45%;
+		margin: 5px;
+	}
+
+	.config__preview{
+		width: 90%;
+		margin: 10px;
+	}
 }

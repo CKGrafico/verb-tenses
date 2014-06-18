@@ -7,11 +7,13 @@
 	$('.config__person').on('change', function() {
 		person = parseInt($(this).val(), 10);
 		processTenses();
+		processPreview();
 	});
 
 	$('.config__verb').on('change', function() {
 		verb = parseInt($(this).val(), 10);
 		processTenses();
+		processPreview();
 	});
 
 	$('.config__filters').on('submit', function(e) {
@@ -48,6 +50,10 @@
 		}
 
 		$('.footable').footable();
+	}
+
+	function processPreview() {
+		$('.config__preview').text( g.persons[person] + ' / ' + g.verbs[verb][0] + ' / ' + g.complements[verb]);
 	}
 
 	// because object in JS...
