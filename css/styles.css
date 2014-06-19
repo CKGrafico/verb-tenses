@@ -66,11 +66,11 @@ select {
 	color: gray;
 }
 
-.past .after-pron:first-child {
+.past .after-pron-1 {
 	text-transform: capitalize;
 }
 
-.past .after-pron:last-child {
+.past .after-pron-2, .past .person-2 {
 	text-transform: lowercase;
 }
 /* medias */

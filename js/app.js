@@ -76,8 +76,8 @@
 			}
 			tr.append($('<td/>').addClass('past').html(
 
-				'<span class="after-pron">' + ((_question) ? _question : _afterPronT1) + '</span> ' +
-				_person +
+				'<span class="after-pron after-pron-1">' + ((_question) ? _question : _afterPronT1) + '</span> ' +
+				((_person === 'I') ? _person : (' <span class="person-2">' +_person + '</span> ')) +
 				' <span class="after-pron">' + _afterPronT2 + '</span> ' +
 				_verb[((tense.noTense) ? 0 : tense.verb)] +
 				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
@@ -87,8 +87,8 @@
 
 			container.append(tr);
 		}
-
 		$('.footable').footable();
+		$('.footable').trigger('footable_redraw');
 	}
 
 	function processPreview() {
