@@ -66,6 +66,10 @@ select {
 	color: gray;
 }
 
+.footable .negative {
+	border-bottom: 1px dashed #FF28EE;
+}
+
 /* medias */
 @media screen and (max-width: 1050px) {
 	.config__filters{

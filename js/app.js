@@ -36,13 +36,31 @@
 		for (var i = 0; i < tenses.length; i++) {
 			var tense = tenses[i];
 			var tr = $('<tr/>');
+			var _afterPron = get(tense.afterPron, person);
+			var _afterVerb = get(tense.afterVerb, person);
+
+			// Tense
 			tr.append($('<td/>').addClass('footable-first-column').append($('<span/>').addClass('footable-toggle')).text(tense.name));
+
+			// Positive
 			tr.append($('<td/>').html(
 
 				_person +
-				'<span class="after-pron">' + get(tense.afterPron, person) + '</span> ' +
+				'<span class="after-pron">' + _afterPron + '</span> ' +
 				_verb[tense.verb] +
-				'<span class="after-verb">' + get(tense.afterVerb, person) + '</span> ' +
+				'<span class="after-verb">' + _afterVerb + '</span> ' +
+				'<span class="complement">' + _complement + '</span>'
+
+			));
+
+			// Negative
+			tr.append($('<td/>').html(
+
+				_person + ' ' +
+				// '<span class="negative">' + get(tense.negative, person) + '</span> ' +
+				'<span class="after-pron">' + get(tense.negative, person) + '</span> ' +
+				_verb[0] +
+				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
 			));
