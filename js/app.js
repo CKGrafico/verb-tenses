@@ -22,8 +22,9 @@
 		footableFilter.filter($('.config__filter').val());
 	});
 
-	function configOptions() {
-	}
+	$('.footable').on('click', '.button__info', function() {
+		vex.dialog.alert($(this).data('info'));
+	});
 
 	function processTenses() {
 		var _verb = g.verbs[verb];
@@ -95,6 +96,9 @@
 				'<span class="complement">' + _complement + ' ?</span>'
 
 			));
+
+			// More info
+			tr.append($('<td/>').addClass('footable-last-column').append($('<button/>').text('More info').addClass('button__info').data('info', tense.info)));
 
 			container.append(tr);
 		}

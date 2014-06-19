@@ -29,7 +29,8 @@
 			negative: ['don\'t', 'don\'t', 'doesn\'t'],
 			question: ['Do', 'Do', 'Does'],
 			toBe: ['am', 'are', 'is'],
-			toBeNegative: ['am not', 'aren\'t', 'isn\'t']
+			toBeNegative: ['am not', 'aren\'t', 'isn\'t'],
+			info: 'Lorem ipsum <b>dssa</b>'
 		},
 
 		{
