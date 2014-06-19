@@ -6,7 +6,7 @@
 		// irregular
 		['drink', 'drank', 'drunk'],
 		// to be
-		[]
+		['be', 'be', 'been'],
 	];
 
 	g.persons = [
@@ -18,7 +18,7 @@
 	g.complements = [
 		'football',
 		'coffe',
-		''
+		'their friend'
 	];
 
 	var tenses = [
@@ -27,7 +27,9 @@
 			verb: 0,
 			afterVerb: ['', '', 's'],
 			negative: ['don\'t', 'don\'t', 'doesn\'t'],
-			question: ['Do', 'Do', 'Does']
+			question: ['Do', 'Do', 'Does'],
+			toBe: ['am', 'are', 'is'],
+			toBeNegative: ['am not', 'aren\'t', 'is\'t']
 		},
 
 		{
@@ -35,14 +37,16 @@
 			verb: 1,
 			negative: ['didn\'t', 'didn\'t', 'didn\'t'],
 			question: ['Did', 'Did', 'Did'],
-			noTense: true
+			noTense: true,
+			toBe: ['were', 'were', 'was'],
+			toBeNegative: ['weren\'t', 'weren\'t', 'wasn\'t']
 		},
 
 		{
 			name: 'Future Simple',
 			verb: 0,
 			afterPron: ['will', 'will', 'will'],
-			negative: ['won\'t', 'won\'t', 'won\'t'],
+			negative: ['won\'t', 'won\'t', 'won\'t']
 
 		},
 
@@ -50,7 +54,7 @@
 			name: 'Future Simple \'going to\'',
 			verb: 0,
 			afterPron: ['am going to', 'are going to', 'is going to'],
-			negative: ['am not going to', 'aren\'t going to', 'isn\'t going to'],
+			negative: ['am not going to', 'aren\'t going to', 'isn\'t going to']
 		},
 
 		{
@@ -74,7 +78,7 @@
 			verb: 0,
 			afterPron: ['will be', 'will be', 'will be'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['won\'t', 'won\'t', 'won\'t']
+			negative: ['won\'t be', 'won\'t be', 'won\'t be']
 		},
 
 		{

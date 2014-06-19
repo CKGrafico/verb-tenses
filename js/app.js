@@ -38,6 +38,7 @@
 			var tr = $('<tr/>');
 			var _afterPron = get(tense.afterPron, person);
 			var _afterVerb = get(tense.afterVerb, person);
+			var _isToBe = _verb[0] === 'be';
 
 			// Tense
 			tr.append($('<td/>').addClass('footable-first-column').append($('<span/>').addClass('footable-toggle')).text(tense.name));
@@ -45,21 +46,22 @@
 			// Positive
 			tr.append($('<td/>').html(
 
-				_person +
+				' <span class="person">' + _person + '</span> ' +
 				' <span class="after-pron">' + _afterPron + '</span> ' +
-				_verb[tense.verb] +
+				((_isToBe && tense.toBe) ? tense.toBe[person] : _verb[tense.verb]) +
 				'<span class="after-verb">' + _afterVerb + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
 			));
 
 			// Negative
+			var _nVerb = _verb[((tense.noTense) ? 0 : tense.verb)];
 			tr.append($('<td/>').html(
 
-				_person + ' ' +
+				' <span class="person">' + _person + '</span> ' +
 				// '<span class="negative">' + get(tense.negative, person) + '</span> ' +
-				'<span class="after-pron">' + get(tense.negative, person) + '</span> ' +
-				_verb[((tense.noTense) ? 0 : tense.verb)] +
+				((_isToBe && tense.toBeNegative) ? '' : ('<span class="after-pron">' + get(tense.negative, person) + '</span> ')) +
+				((_isToBe && tense.toBeNegative) ? tense.toBeNegative[person] : _nVerb) +
 				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
@@ -74,14 +76,24 @@
 				_afterPronT1 = _afterPronT2;
 				_afterPronT2 = '';
 			}
+			// to be
+			var _afterQuestion;
+			if(_isToBe && tense.toBe) {
+				_afterQuestion = tense.toBe[person];
+			}else{
+				_afterQuestion = ((_question) ? _question : _afterPronT1);
+			}
+
+			var _verbQuestion = _verb[((tense.noTense) ? 0 : tense.verb)];
+
 			tr.append($('<td/>').addClass('past').html(
 
-				'<span class="after-pron after-pron-1">' + ((_question) ? _question : _afterPronT1) + '</span> ' +
-				((_person === 'I') ? _person : (' <span class="person-2">' +_person + '</span> ')) +
+				'<span class="after-pron after-pron-1">' + _afterQuestion + '</span> ' +
+				((_person === 'I') ? ' <span class="person">' + _person + '</span> '  : (' <span class="person person-2">' +_person + '</span> ')) +
 				' <span class="after-pron">' + _afterPronT2 + '</span> ' +
-				_verb[((tense.noTense) ? 0 : tense.verb)] +
+				((_isToBe && tense.toBe) ? '' : _verbQuestion) +
 				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
-				'<span class="complement">' + _complement + '</span>'
+				'<span class="complement">' + _complement + ' ?</span>'
 
 			));
 

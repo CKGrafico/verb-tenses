@@ -62,7 +62,7 @@ select {
 	color: red;
 }
 
-.footable .complement {
+.footable .person, .footable .complement {
 	color: gray;
 }
 
