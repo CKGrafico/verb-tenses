@@ -48,7 +48,7 @@
 
 				' <span class="person">' + _person + '</span> ' +
 				' <span class="after-pron">' + _afterPron + '</span> ' +
-				((_isToBe && tense.toBe) ? tense.toBe[person] : _verb[tense.verb]) +
+				((_isToBe && tense.toBe) ? ' <span class="after-pron">' + tense.toBe[person] + '</span> ' : _verb[tense.verb]) +
 				'<span class="after-verb">' + _afterVerb + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
@@ -59,9 +59,8 @@
 			tr.append($('<td/>').html(
 
 				' <span class="person">' + _person + '</span> ' +
-				// '<span class="negative">' + get(tense.negative, person) + '</span> ' +
 				((_isToBe && tense.toBeNegative) ? '' : ('<span class="after-pron">' + get(tense.negative, person) + '</span> ')) +
-				((_isToBe && tense.toBeNegative) ? tense.toBeNegative[person] : _nVerb) +
+				((_isToBe && tense.toBeNegative) ? '<span class="after-pron">' + tense.toBeNegative[person] + '</span> ' : _nVerb) +
 				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
