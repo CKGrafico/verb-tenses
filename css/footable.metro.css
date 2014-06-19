@@ -137,6 +137,16 @@
   background-color: #43c83c;
   border-color: #43c83c;
 }
+.footable.metro-brown {
+  border-color: #7c7c7c;
+}
+.footable.metro-brown > tfoot > tr > th,
+.footable.metro-brown > thead > tr > th,
+.footable.metro-brown > tfoot > tr > td,
+.footable.metro-brown > thead > tr > td {
+  background-color: #7c7c7c;
+  border-color: #7c7c7c;
+}
 .footable.metro-blue {
   border-color: #1171a3;
 }
