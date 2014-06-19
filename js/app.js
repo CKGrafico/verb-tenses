@@ -49,7 +49,7 @@
 				' <span class="person">' + _person + '</span> ' +
 				' <span class="after-pron">' + _afterPron + '</span> ' +
 				((_isToBe && tense.toBe) ? ' <span class="after-pron">' + tense.toBe[person] + '</span> ' : _verb[tense.verb]) +
-				'<span class="after-verb">' + _afterVerb + '</span> ' +
+				'<span class="after-verb">' + ((_afterVerb === 's' && _isToBe) ? '' : _afterVerb) + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
 			));

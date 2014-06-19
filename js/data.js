@@ -29,7 +29,7 @@
 			negative: ['don\'t', 'don\'t', 'doesn\'t'],
 			question: ['Do', 'Do', 'Does'],
 			toBe: ['am', 'are', 'is'],
-			toBeNegative: ['am not', 'aren\'t', 'is\'t']
+			toBeNegative: ['am not', 'aren\'t', 'isn\'t']
 		},
 
 		{
