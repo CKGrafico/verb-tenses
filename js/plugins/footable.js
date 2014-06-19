@@ -612,7 +612,6 @@
 
                     selector += ', > thead > tr[data-group-row="true"] > th[data-group="' + data.group + '"]';
                     var $column = $table.find(selector).add(this);
-                    debugger
                     if (breakpointName !== '') {
                       if (data.hide[breakpointName] === false) $column.addClass('footable-visible').show();
                       else $column.removeClass('footable-visible').hide();

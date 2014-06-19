@@ -50,10 +50,6 @@ select {
 	margin: 0 auto;
 }
 
-.footable tr td:first-child {
-	font-weight: bold;
-}
-
 .footable .after-pron {
 	color: #1491E4;
 }
@@ -105,5 +101,11 @@ select {
 	.config__preview{
 		width: 90%;
 		margin: 10px;
+	}
+}
+
+@media screen and (min-width: 490px) {
+	.footable tr td:first-child {
+		font-weight: bold;
 	}
 }
