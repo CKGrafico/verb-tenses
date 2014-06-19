@@ -46,7 +46,7 @@
 			tr.append($('<td/>').html(
 
 				_person +
-				'<span class="after-pron">' + _afterPron + '</span> ' +
+				' <span class="after-pron">' + _afterPron + '</span> ' +
 				_verb[tense.verb] +
 				'<span class="after-verb">' + _afterVerb + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
@@ -59,11 +59,32 @@
 				_person + ' ' +
 				// '<span class="negative">' + get(tense.negative, person) + '</span> ' +
 				'<span class="after-pron">' + get(tense.negative, person) + '</span> ' +
-				_verb[0] +
+				_verb[((tense.noTense) ? 0 : tense.verb)] +
 				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
 				'<span class="complement">' + _complement + '</span>'
 
 			));
+
+			// Question
+			_question = get(tense.question, person);
+			var _afterPronT1 = _afterPron.substr(0,_afterPron.indexOf(' '));
+			var _afterPronT2 = _afterPron.substr(_afterPron.indexOf(' ')+1);
+			// only one word
+			if(_afterPronT2 && !_afterPronT1) {
+				_afterPronT1 = _afterPronT2;
+				_afterPronT2 = '';
+			}
+			tr.append($('<td/>').addClass('past').html(
+
+				'<span class="after-pron">' + ((_question) ? _question : _afterPronT1) + '</span> ' +
+				_person +
+				' <span class="after-pron">' + _afterPronT2 + '</span> ' +
+				_verb[((tense.noTense) ? 0 : tense.verb)] +
+				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
+				'<span class="complement">' + _complement + '</span>'
+
+			));
+
 			container.append(tr);
 		}
 

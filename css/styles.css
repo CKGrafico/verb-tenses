@@ -65,6 +65,14 @@ select {
 .footable .complement {
 	color: gray;
 }
+
+.past .after-pron:first-child {
+	text-transform: capitalize;
+}
+
+.past .after-pron:last-child {
+	text-transform: lowercase;
+}
 /* medias */
 @media screen and (max-width: 1050px) {
 	.config__filters{
