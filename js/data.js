@@ -4,7 +4,7 @@
 		// regular
 		['play', 'played', 'played'],
 		// irregular
-		['go', 'went', 'gone'],
+		['drink', 'drank', 'drunk'],
 		// to be
 		[]
 	];
@@ -17,7 +17,7 @@
 
 	g.complements = [
 		'football',
-		'to school',
+		'coffe',
 		''
 	];
 

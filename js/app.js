@@ -37,13 +37,13 @@
 			var tense = tenses[i];
 			var tr = $('<tr/>');
 			tr.append($('<td/>').addClass('footable-first-column').append($('<span/>').addClass('footable-toggle')).text(tense.name));
-			tr.append($('<td/>').text(
+			tr.append($('<td/>').html(
 
 				_person +
-				get(tense.afterPron, person) + ' ' +
+				'<span class="after-pron">' + get(tense.afterPron, person) + '</span> ' +
 				_verb[tense.verb] +
-				get(tense.afterVerb, person) + ' ' +
-				_complement
+				'<span class="after-verb">' + get(tense.afterVerb, person) + '</span> ' +
+				'<span class="complement">' + _complement + '</span>'
 
 			));
 			container.append(tr);

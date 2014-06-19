@@ -43,6 +43,29 @@ select {
 	padding-top: 5px;
 	font-weight: bold;
 }
+
+.footable {
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.footable tr td:first-child {
+	font-weight: bold;
+}
+
+.footable .after-pron {
+	color: #1491E4;
+}
+
+.footable .after-verb {
+	color: red;
+}
+
+.footable .complement {
+	color: gray;
+}
+
 /* medias */
 @media screen and (max-width: 1050px) {
 	.config__filters{
