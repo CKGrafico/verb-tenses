@@ -70,11 +70,6 @@ select {
 .past .after-pron-2, .past .person-2 {
 	text-transform: lowercase;
 }
-
-.button__info {
-	margin: 0 auto;
-	display: block;
-}
 /* medias */
 @media screen and (max-width: 1050px) {
 	.config__filters{
