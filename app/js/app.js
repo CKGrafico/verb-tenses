@@ -22,8 +22,10 @@
 		footableFilter.filter($('.config__filter').val());
 	});
 
-	function configOptions() {
-	}
+	$('.footable').on('click', '.button__info', function() {
+		vex.dialog.alert($(this).data('info'));
+	});
+
 
 	function processTenses() {
 		var _verb = g.verbs[verb];
