@@ -1,3 +1,10 @@
 node_modules
 gulpfile.js
 package.json
+README.md
+LICENSE
+www/js
+www/css
+*.psd
+*.xap
+*.apk
