@@ -29,7 +29,8 @@
 			negative: ['don\'t', 'don\'t', 'doesn\'t'],
 			question: ['Do', 'Do', 'Does'],
 			toBe: ['am', 'are', 'is'],
-			toBeNegative: ['am not', 'aren\'t', 'isn\'t']
+			toBeNegative: ['am not', 'aren\'t', 'isn\'t'],
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim diam, sollicitudin ac nisi vel, bibendum faucibus enim. Proin quis nibh euismod, aliquet mi quis, condimentum quam. Aenean sapien nunc, lobortis in feugiat non, congue vitae eros. Phasellus sit amet turpis sodales, aliquam ligula eget, elementum mauris. Vivamus vitae leo at ligula suscipit fermentum. Nunc vitae elit sit amet neque accumsan pharetra. Phasellus vel nunc tincidunt, pretium est eget, luctus nunc. Aenean et tincidunt lacus, a gravida erat. In placerat aliquet elit id pharetra. Maecenas pulvinar, sem sit amet blandit rhoncus, risus arcu ullamcorper odio, in euismod libero lectus vel massa. Nam ac malesuada erat. Nunc at luctus enim, a consequat elit. Duis non mauris urna. Sed quis dolor malesuada, imperdiet orci ut, malesuada sapien. Duis pharetra sit amet lacus sed pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vestibulum sapien sagittis velit pulvinar ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec viverra pretium metus, non adipiscing purus dignissim ut. Morbi eu libero feugiat, eleifend lorem vel, blandit urna. Proin a diam et nibh interdum consequat. Nunc rhoncus malesuada nibh nec condimentum. Sed nec sapien vitae est vehicula convallis in gravida orci. Nunc tempus sem et erat posuere suscipit. Phasellus quis aliquet velit.'
 		},
 
 		{

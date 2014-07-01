@@ -22,7 +22,8 @@
 		footableFilter.filter($('.config__filter').val());
 	});
 
-	$('.footable').on('click', '.button__info', function() {
+	$('.footable').on('click', '.button__info', function(e) {
+		e.preventDefault();
 		vex.dialog.alert($(this).data('info'));
 	});
 
@@ -95,8 +96,11 @@
 				((_isToBe && tense.toBe) ? '' : _verbQuestion) +
 				'<span class="after-verb">' + ((_afterVerb !== 's') ? _afterVerb : '') + '</span> ' +
 				'<span class="complement">' + _complement + ' ?</span>'
-
 			));
+
+			if(tense.text) {
+				tr.append($('<td/>').addClass('text button__info').html('<div>' + tense.text.slice(0, 30) + '...</div>').data('info', tense.text));
+			}
 
 			container.append(tr);
 		}
@@ -118,15 +122,3 @@
 
 	processTenses();
 })(this, jQuery);
-
-/*
-container.append('
-				<tr>
-					<td class="footable-first-column"><span class="footable-toggle"></span>Present Simple</td>
-					<td>positive</td>
-					<td>negative</td>
-					<td>question</td>
-					<td class="comment">comment</td>
-				</tr>
-			');
- */
