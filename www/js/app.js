@@ -24,7 +24,6 @@
 
 	$('.footable').on('click', '.button__info', function(e) {
 		e.preventDefault();
-		debugger
 		vex.dialog.alert($(this).data('info'));
 	});
 
