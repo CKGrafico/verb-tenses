@@ -24,6 +24,7 @@
 
 	$('.footable').on('click', '.button__info', function(e) {
 		e.preventDefault();
+		debugger
 		vex.dialog.alert($(this).data('info'));
 	});
 
@@ -99,7 +100,12 @@
 			));
 
 			if(tense.text) {
-				tr.append($('<td/>').addClass('text button__info').html('<div>' + tense.text.slice(0, 30) + '...</div>').data('info', tense.text));
+				tr.append(
+					$('<td/>').html(tense.text[0].title.slice(0, 30)+'...')
+						.append(
+							$('<button/>').addClass('button__info').text('see more').attr('data-info', toText(tense.text))
+						)
+				);
 			}
 
 			container.append(tr);
@@ -110,6 +116,16 @@
 
 	function processPreview() {
 		$('.config__preview').text( g.persons[person] + ' / ' + g.verbs[verb][0] + ' / ' + g.complements[verb]);
+	}
+
+	function toText(textArray) {
+		var text = '';
+		for (var i = 0; i < textArray.length; i++) {
+			text += '<b>' + textArray[i].title + '</b>' +
+					'<p>' + textArray[i].content + '</p>';
+		}
+
+		return text;
 	}
 
 	// because object in JS...

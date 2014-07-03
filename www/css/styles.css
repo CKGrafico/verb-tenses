@@ -35,6 +35,11 @@ select {
 	float: left;
 }
 
+.button__info {
+	float: right;
+	margin-left: 5px;
+}
+
 .config__preview {
 	width: 24%;
 	float: left;

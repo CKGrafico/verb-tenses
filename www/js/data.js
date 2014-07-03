@@ -30,7 +30,32 @@
 			question: ['Do', 'Do', 'Does'],
 			toBe: ['am', 'are', 'is'],
 			toBeNegative: ['am not', 'aren\'t', 'isn\'t'],
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim diam, sollicitudin ac nisi vel, bibendum faucibus enim. Proin quis nibh euismod, aliquet mi quis, condimentum quam. Aenean sapien nunc, lobortis in feugiat non, congue vitae eros. Phasellus sit amet turpis sodales, aliquam ligula eget, elementum mauris. Vivamus vitae leo at ligula suscipit fermentum. Nunc vitae elit sit amet neque accumsan pharetra. Phasellus vel nunc tincidunt, pretium est eget, luctus nunc. Aenean et tincidunt lacus, a gravida erat. In placerat aliquet elit id pharetra. Maecenas pulvinar, sem sit amet blandit rhoncus, risus arcu ullamcorper odio, in euismod libero lectus vel massa. Nam ac malesuada erat. Nunc at luctus enim, a consequat elit. Duis non mauris urna. Sed quis dolor malesuada, imperdiet orci ut, malesuada sapien. Duis pharetra sit amet lacus sed pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vestibulum sapien sagittis velit pulvinar ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec viverra pretium metus, non adipiscing purus dignissim ut. Morbi eu libero feugiat, eleifend lorem vel, blandit urna. Proin a diam et nibh interdum consequat. Nunc rhoncus malesuada nibh nec condimentum. Sed nec sapien vitae est vehicula convallis in gravida orci. Nunc tempus sem et erat posuere suscipit. Phasellus quis aliquet velit.'
+			text: [
+				{
+					title: 'Permanent situations',
+					content: 'She works in a bank.'
+				},
+
+				{
+					title: 'Generally true',
+					content: 'The sun rises in the east.'
+				},
+
+				{
+					title: 'Habits',
+					content: 'I play tennis every Tuesday.'
+				},
+
+				{
+					title: 'Future Timetables',
+					content: 'Our train leaves at 11 am.'
+				},
+
+				{
+					title: 'Future after when, until, ...',
+					content: 'I won\'t go until it stops raining.'
+				}
+			]
 		},
 
 		{
@@ -40,14 +65,66 @@
 			question: ['Did', 'Did', 'Did'],
 			noTense: true,
 			toBe: ['were', 'were', 'was'],
-			toBeNegative: ['weren\'t', 'weren\'t', 'wasn\'t']
+			toBeNegative: ['weren\'t', 'weren\'t', 'wasn\'t'],
+			text: [
+				{
+					title: 'Finished events in the past with no connection to the present',
+					content: 'Leonardo painted the Mona Lisa.'
+				},
+
+				{
+					title: 'With a finished time word ',
+					content: 'I went to the cinema yesterday.'
+				},
+
+				{
+					title: 'For stories / lists of events',
+					content: 'Yesterday I went to the library, met a friend for lunch, and played tennis.'
+				},
+
+				{
+					title: 'Details of news',
+					content: 'I\'ve been on holiday. I went to Spain and Portugal.'
+				},
+
+				{
+					title: 'As part of the second conditional',
+					content: 'If she knew his number, she would call him.'
+				}
+			]
 		},
 
 		{
 			name: 'Future Simple',
 			verb: 0,
 			afterPron: ['will', 'will', 'will'],
-			negative: ['won\'t', 'won\'t', 'won\'t']
+			negative: ['won\'t', 'won\'t', 'won\'t'],
+			text: [
+				{
+					title: 'A decision at the moment of speaking',
+					content: 'A: "I\'m cold." B: "I\'ll close the window."'
+				},
+
+				{
+					title: 'Prediction based on opinion',
+					content: 'I think the Conservatives will win the next election.'
+				},
+
+				{
+					title: 'A future fact',
+					content: 'The sun will rise at 7am.'
+				},
+
+				{
+					title: 'Promises / requests / refusal / willingness',
+					content: 'I\'ll help you with your homework.'
+				},
+
+				{
+					title: 'In the same way as the future continuous, but with state verbs',
+					content: 'I\'ll be at the station when you arrive.'
+				}
+			]
 
 		},
 
@@ -55,7 +132,18 @@
 			name: 'Future Simple \'going to\'',
 			verb: 0,
 			afterPron: ['am going to', 'are going to', 'is going to'],
-			negative: ['am not going to', 'aren\'t going to', 'isn\'t going to']
+			negative: ['am not going to', 'aren\'t going to', 'isn\'t going to'],
+			text: [
+				{
+					title: 'Future plans made before the moment of speaking',
+					content: 'A: "We\'ve run out of milk." B: "I know, I\'m going to buy some."'
+				},
+
+				{
+					title: 'Prediction based on present evidence',
+					content: 'Look at those boys playing football! They\'re going to break the window.'
+				},
+			]
 		},
 
 		{
