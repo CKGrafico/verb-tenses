@@ -1,4 +1,4 @@
-(function(g) {
+-(function(g) {
 
 	g.verbs = [
 		// regular
@@ -151,7 +151,33 @@
 			verb: 0,
 			afterPron: ['am', 'are', 'is'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['am not', 'aren\'t', 'isn\'t']
+			negative: ['am not', 'aren\'t', 'isn\'t'],
+			text: [
+				{
+					title: 'Happening now',
+					content: 'Julie is sleeping at the moment.'
+				},
+
+				{
+					title: 'Temporary situations',
+					content: 'I\'m staying a friend for a few days.'
+				},
+
+				{
+					title: 'Annoying habits',
+					content: 'You\'re always losing your keys!'
+				},
+
+				{
+					title: 'Definite future plants',
+					content: 'I\'m meeting my father later.'
+				},
+
+				{
+					title: 'Changing situations',
+					content: 'The weather is improving.'
+				}
+			]
 		},
 
 		{
@@ -159,7 +185,28 @@
 			verb: 0,
 			afterPron: ['were', 'were', 'was'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['weren\'t', 'weren\'t', 'wasn\'t']
+			negative: ['weren\'t', 'weren\'t', 'wasn\'t'],
+			text: [
+				{
+					title: 'A continuous action in the past which is interrupted by another action or a time',
+					content: 'I was taking a bath when the telephone rang.'
+				},
+
+				{
+					title: 'Background information, to give atmosphere to a story',
+					content: ' The birds were singing, the sun was shining and in the cafes people were laughing and chatting.'
+				},
+
+				{
+					title: 'An annoying and repeated action in the past, usually with "always"',
+					content: 'He was always leaving the tap running.'
+				},
+
+				{
+					title: 'For two actions which happened at the same time in the past',
+					content: 'I was watching TV and he was reading.'
+				}
+			]
 		},
 
 		{
@@ -167,28 +214,82 @@
 			verb: 0,
 			afterPron: ['will be', 'will be', 'will be'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['won\'t be', 'won\'t be', 'won\'t be']
+			negative: ['won\'t be', 'won\'t be', 'won\'t be'],
+			text: [
+				{
+					title: 'A continuous action in the future which is interrupted by a time or by another action',
+					content: 'I\'ll be waiting when you arrive.'
+				},
+
+				{
+					title: 'A complete action in the future that will happen in the normal course of events',
+					content: 'The Government will be making a statement later. '
+				},
+
+				{
+					title: 'To make a guess about the present',
+					content: 'My mother will be working now.'
+				}
+			]
 		},
 
 		{
 			name: 'Present Perfect',
 			verb: 2,
 			afterPron: ['have', 'have', 'has'],
-			negative: ['haven\'t', 'haven\'t', 'hasn\'t']
+			negative: ['haven\'t', 'haven\'t', 'hasn\'t'],
+			text: [
+				{
+					title: 'Unfinished actions or situations',
+					content: 'I have known Julie for ten years.'
+				},
+
+				{
+					title: 'Finished actions or situations',
+					content: 'I have been to Mexico.'
+				}
+			]
 		},
 
 		{
 			name: 'Past Perfect',
 			verb: 2,
 			afterPron: ['had', 'had', 'had'],
-			negative: ['hadn\'t', 'hadn\'t', 'hadn\'t']
+			negative: ['hadn\'t', 'hadn\'t', 'hadn\'t'],
+			text: [
+				{
+					title: 'A completed action before something else in the past',
+					content: 'When we arrived, the film had started.'
+				},
+
+				{
+					title: 'To explain or give a reason for something in the past',
+					content: 'It had snowed in the night, so the bus didn\'t arrive.'
+				},
+
+				{
+					title: 'Something that started in the past and continued up to another action in the past',
+					content: 'When he graduated, he had been in London for six years.'
+				},
+
+				{
+					title: 'As part of the third conditional',
+					content: 'If I had known you were ill, I would have visited you.'
+				}
+			]
 		},
 
 		{
 			name: 'Future Perfect',
 			verb: 2,
 			afterPron: ['will have', 'will have', 'will has'],
-			negative: ['won\'t have', 'won\'t have', 'won\'t has']
+			negative: ['won\'t have', 'won\'t have', 'won\'t has'],
+			text: [
+				{
+					title: 'To talk about an action that will finish before a certain time in the future, but we don\'t know exactly when',
+					content: 'By 10 o\'clock I will have finished my homework.'
+				}
+			]
 		},
 
 		{
@@ -196,7 +297,18 @@
 			verb: 0,
 			afterPron: ['have been', 'have been', 'has been'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['haven\'t been', 'haven\'t been', 'hasn\'t been']
+			negative: ['haven\'t been', 'haven\'t been', 'hasn\'t been'],
+			text: [
+				{
+					title: 'To say how long for unfinished actions which started in the past and continue to the present',
+					content: 'I have been living in London for two years.'
+				},
+
+				{
+					title: 'Actions which have just stopped and have a result',
+					content: 'I\'m so tired, I have been studying.'
+				}
+			]
 		},
 
 		{
@@ -204,7 +316,18 @@
 			verb: 0,
 			afterPron: ['had been', 'had been', 'had been'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['hadn\'t been', 'hadn\'t been', 'hadn\'t been']
+			negative: ['hadn\'t been', 'hadn\'t been', 'hadn\'t been'],
+			text: [
+				{
+					title: 'Something that started in the past and continued up to another action or event ',
+					content: 'She had been working at that company for a year when she met James.'
+				},
+
+				{
+					title: 'Cause of something in the past',
+					content: 'The pavement was wet, it had been raining.'
+				}
+			]
 		},
 
 		{
@@ -212,7 +335,13 @@
 			verb: 0,
 			afterPron: ['will have been', 'will have been', 'will has been'],
 			afterVerb: ['ing', 'ing', 'ing'],
-			negative: ['won\'t have been', 'won\'t have been', 'won\'t has been']
+			negative: ['won\'t have been', 'won\'t have been', 'won\'t has been'],
+			text: [
+				{
+					title: 'With a time word, to talk about an action which starts before a time in the future and continues up to that time',
+					content: 'In April 2009, I will have been teaching here for two years.'
+				}
+			]
 		}
 	];
 

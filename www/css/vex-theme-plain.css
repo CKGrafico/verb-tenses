@@ -119,7 +119,7 @@
   padding-bottom: 160px;
 }
 /* line 15, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-content {
+.vex-content {
   font-family: "Helvetica Neue", sans-serif;
   background: white;
   color: #444444;
@@ -132,18 +132,18 @@
   line-height: 1.5em;
 }
 /* line 27, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-content h1, .vex.vex-theme-plain .vex-content h2, .vex.vex-theme-plain .vex-content h3, .vex.vex-theme-plain .vex-content h4, .vex.vex-theme-plain .vex-content h5, .vex.vex-theme-plain .vex-content h6, .vex.vex-theme-plain .vex-content p, .vex.vex-theme-plain .vex-content ul, .vex.vex-theme-plain .vex-content li {
+.vex-content h1, .vex-content h2, .vex-content h3, .vex-content h4, .vex-content h5, .vex-content h6, .vex-content p, .vex-content ul, .vex-content li {
   color: inherit;
 }
 /* line 30, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-close {
+.vex-close {
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
 }
 /* line 36, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-close:before {
+.vex-close:before {
   position: absolute;
   content: "\00D7";
   font-size: 26px;
@@ -158,20 +158,20 @@
   background: transparent;
 }
 /* line 50, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-close:hover:before, .vex.vex-theme-plain .vex-close:active:before {
+.vex-close:hover:before, .vex-close:active:before {
   color: #777777;
   background: #e0e0e0;
 }
 /* line 56, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-form .vex-dialog-message {
+.vex-dialog-form .vex-dialog-message {
   margin-bottom: 0.5em;
 }
 /* line 59, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-form .vex-dialog-input {
+.vex-dialog-form .vex-dialog-input {
   margin-bottom: 1em;
 }
 /* line 62, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-form .vex-dialog-input textarea, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="date"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="datetime"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="datetime-local"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="email"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="month"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="number"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="password"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="search"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="tel"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="text"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="time"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="url"], .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="week"] {
+.vex-dialog-form .vex-dialog-input textarea, .vex-dialog-form .vex-dialog-input input[type="date"], .vex-dialog-form .vex-dialog-input input[type="datetime"], .vex-dialog-form .vex-dialog-input input[type="datetime-local"], .vex-dialog-form .vex-dialog-input input[type="email"], .vex-dialog-form .vex-dialog-input input[type="month"], .vex-dialog-form .vex-dialog-input input[type="number"], .vex-dialog-form .vex-dialog-input input[type="password"], .vex-dialog-form .vex-dialog-input input[type="search"], .vex-dialog-form .vex-dialog-input input[type="tel"], .vex-dialog-form .vex-dialog-input input[type="text"], .vex-dialog-form .vex-dialog-input input[type="time"], .vex-dialog-form .vex-dialog-input input[type="url"], .vex-dialog-form .vex-dialog-input input[type="week"] {
   background: #f0f0f0;
   width: 100%;
   padding: 0.25em 0.67em;
@@ -183,24 +183,24 @@
   margin: 0 0 0.25em;
 }
 /* line 73, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-form .vex-dialog-input textarea:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="date"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="datetime"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="datetime-local"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="email"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="month"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="number"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="password"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="search"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="tel"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="text"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="time"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="url"]:focus, .vex.vex-theme-plain .vex-dialog-form .vex-dialog-input input[type="week"]:focus {
+.vex-dialog-form .vex-dialog-input textarea:focus, .vex-dialog-form .vex-dialog-input input[type="date"]:focus, .vex-dialog-form .vex-dialog-input input[type="datetime"]:focus, .vex-dialog-form .vex-dialog-input input[type="datetime-local"]:focus, .vex-dialog-form .vex-dialog-input input[type="email"]:focus, .vex-dialog-form .vex-dialog-input input[type="month"]:focus, .vex-dialog-form .vex-dialog-input input[type="number"]:focus, .vex-dialog-form .vex-dialog-input input[type="password"]:focus, .vex-dialog-form .vex-dialog-input input[type="search"]:focus, .vex-dialog-form .vex-dialog-input input[type="tel"]:focus, .vex-dialog-form .vex-dialog-input input[type="text"]:focus, .vex-dialog-form .vex-dialog-input input[type="time"]:focus, .vex-dialog-form .vex-dialog-input input[type="url"]:focus, .vex-dialog-form .vex-dialog-input input[type="week"]:focus {
   -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 /* line 77, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-form .vex-dialog-buttons {
+.vex-dialog-form .vex-dialog-buttons {
   *zoom: 1;
 }
 /* line 38, ../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.vex.vex-theme-plain .vex-dialog-form .vex-dialog-buttons:after {
+.vex-dialog-form .vex-dialog-buttons:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 80, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-button {
+.vex-dialog-button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -217,11 +217,11 @@
   padding: 0.75em 2em;
 }
 /* line 92, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-button.vex-last {
+.vex-dialog-button.vex-last {
   margin-left: 0;
 }
 /* line 95, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-button:focus {
+.vex-dialog-button:focus {
   animation: vex-pulse 1.1s infinite;
   -webkit-animation: vex-pulse 1.1s infinite;
   -moz-animation: vex-pulse 1.1s infinite;
@@ -232,7 +232,7 @@
 }
 @media (max-width: 568px) {
   /* line 95, ../sass/vex-theme-plain.sass */
-  .vex.vex-theme-plain .vex-dialog-button:focus {
+  .vex-dialog-button:focus {
     animation: none;
     -webkit-animation: none;
     -moz-animation: none;
@@ -242,12 +242,12 @@
   }
 }
 /* line 104, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-primary {
+.vex-dialog-button.vex-dialog-button-primary {
   background: #3288e6;
   color: white;
 }
 /* line 108, ../sass/vex-theme-plain.sass */
-.vex.vex-theme-plain .vex-dialog-button.vex-dialog-button-secondary {
+.vex-dialog-button.vex-dialog-button-secondary {
   background: #e0e0e0;
   color: #777777;
 }

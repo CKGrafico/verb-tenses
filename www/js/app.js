@@ -25,6 +25,12 @@
 	$('.footable').on('click', '.button__info', function(e) {
 		e.preventDefault();
 		vex.dialog.alert($(this).data('info'));
+		$translate = $('<input/>').attr('type', 'button').addClass('vex-dialog-button-primary vex-dialog-button button__translate').val('Translate');
+		$('.vex-dialog-buttons').append($translate);
+
+		$translate.on('click', function() {
+			window.open('http://www.bing.com/translator/?from=en&to=es&text=' + encodeURI($('.vex-dialog-message').text()));
+		});
 	});
 
 
@@ -102,7 +108,7 @@
 				tr.append(
 					$('<td/>').html(tense.text[0].title.slice(0, 30)+'...')
 						.append(
-							$('<button/>').addClass('button__info').text('see more').attr('data-info', toText(tense.text))
+							$('<button/>').addClass('button__info vex-dialog-button-primary vex-dialog-button').text('see more').attr('data-info', toText(tense.text))
 						)
 				);
 			}

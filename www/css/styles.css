@@ -38,6 +38,11 @@ select {
 .button__info {
 	float: right;
 	margin-left: 5px;
+	font-size: 0.6em !important;
+}
+
+.button__translate {
+	margin-right: 10px !important;
 }
 
 .config__preview {
