@@ -29,7 +29,7 @@
 		$('.vex-dialog-buttons').append($translate);
 
 		$translate.on('click', function() {
-			window.open('http://www.bing.com/translator/?from=en&to=es&text=' + encodeURI($('.vex-dialog-message').text()));
+		    window.open('http://www.bing.com/translator/?from=en&to=es&text=' + encodeURI($('.vex-dialog-message').context.body.lastChild.innerText));
 		});
 	});
 
