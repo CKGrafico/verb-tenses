@@ -1,0 +1,45 @@
+html, body {
+	background: #b8efa5;
+	margin: 0;
+	padding: 0;
+	font-family: Segoe, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 16px;
+}
+
+a:link { color: inherit; text-decoration: none; }
+a:visited { color: inherit; text-decoration: none; }
+a:hover { color: inherit; text-decoration: none; }
+a:active { color: inherit; text-decoration: none; }
+
+.main {
+	margin: 50px auto;
+	max-width: 800px;
+	text-align: center;
+}
+
+.main__logo {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.main__button {
+	margin-bottom: 5px;
+}
+
+.main__thanks {
+	font-style: italic;
+	color: #8B8B8B;
+	font-size: 14px;
+}
+
+.main__thanks h4 {
+	margin: 5px;
+	color: black;
+	font-size: 16px;
+	font-style: normal;
+}
+
+.main__thanks a:hover {
+	color: #12BE41;
+}
+
