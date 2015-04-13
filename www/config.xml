@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.ckgrafico.verbtenses"
+	version   = "2.0"
+	versionCode= "50">
+	<name>Verb Tenses</name>
+	<description>
+		With English verb tenses you can study or use to remember it, check the english verb tenses wherever you want.
+	</description>
+	<author href="http://ckgrafico.com" email="quique@ckgrafico.com">
+		CKGrafico
+	</author>
+
+	<preference name="orientation" value="default" />
+	<preference name="fullscreen" value="true" />
+	<preference name="target-device" value="universal" />
+	<preference name="webviewbounce" value="true" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="stay-in-webview" value="true" />
+	<preference name="ios-statusbarstyle" value="black-opaque" />
+	<preference name="detect-data-types" value="true" />
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="show-splash-screen-spinner" value="true" />
+	<preference name="auto-hide-splash-screen" value="true" />
+	<preference name="EnableViewportScale" value="false" />
+	<preference name="MediaPlaybackRequiresUserAction" value="false" />
+	<preference name="AllowInlineMediaPlayback" value="false" />
+	<preference name="BackupWebStorage" value="cloud" />
+	<preference name="TopActivityIndicator" value="gray" />
+	<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+	<preference name="HideKeyboardFormAccessoryBar" value="false" />
+	<preference name="SuppressesIncrementalRendering" value="false" />
+	<preference name="android-minSdkVersion" value="7" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="SplashScreenDelay" value="5000" />
+	<preference name="ErrorUrl" value=""/>
+	<preference name="BackgroundColor" value=""/>
+	<preference name="KeepRunning" value="true"/>
+	<preference name="DisallowOverscroll" value="false"/>
+	<preference name="LoadingDialog" value=","/>
+	<preference name="LoadUrlTimeoutValue" value="20000" />
+	<preference name="disable-cursor" value="true" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+	<gap:platform name="ios" />
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<icon src="logo.png" gap:platform="ios" width="57" height="57" />
+	<icon src="logo.png" gap:platform="ios" width="72" height="72" />
+	<icon src="logo.png" gap:platform="ios" width="114" height="114" />
+	<icon src="logo.png" gap:platform="ios" width="144" height="144" />
+	<icon src="logo.png" gap:platform="ios" width="76" height="76" />
+	<icon src="logo.png" gap:platform="ios" width="120" height="120" />
+	<icon src="logo.png" gap:platform="ios" width="152" height="152" />
+	<icon src="logo.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="logo.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="logo.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="logo.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="logo.png" gap:platform="android" gap:density="xxhdpi" />
+	<icon src="logo.png" gap:platform="winphone" />
+	<icon src="logo.png" gap:platform="winphone" gap:role="background" />
+	<icon src="logo.png" />
+	<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="splash.png" gap:platform="ios" width="768" height="1024 " />
+	<gap:splash src="splash.png" gap:platform="ios" width="1536" height="2048" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash.png" gap:platform="winphone" />
+	<gap:splash src="splash.png" />
+</widget>

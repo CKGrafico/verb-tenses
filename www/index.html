@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Verb tenses</title>
+
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/logo.png"/>
+
+	
+	<link href="min/all.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	
+	<div class="config">
+		<h2>Verb tenses</h2>
+		<div class="config__filters config__filters-tenses">
+			<input type="text" class="config__filter config__filter-tenses" placeholder="Filter by.."></input>
+			<!-- <input type="submit" value="Filter" class="config__send"></input> -->
+		</div>
+		<select class="config__person">
+			<option value="0">1st person</option>
+			<option value="1" selected>2nd person</option>
+			<option value="2">3rd person</option>
+		</select>
+
+		<select class="config__verb">
+			<option value="0" selected>Regular verb</option>
+			<option value="1">Irregular verb</option>
+			<option value="2">verb to be</option>
+		</select>
+
+		<div class="config__preview">You / play / football</div>
+	</div>
+	<table class="footable tenses metro-brown " data-filter="#filter" data-page-size="5">
+		<thead>
+			<tr>
+				<th data-toggle="true" class="footable-first-column">
+					Tense
+				</th>
+				<th data-hide="phone">
+					Positive
+				</th>
+				<th data-hide="phone">
+					Negative
+				</th>
+				<th data-hide="phone">
+					Question
+				</th>
+				<th data-hide="phone, tablet" class="footable-last-column">
+					Comments
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<div class="config">
+		<h2>Irregular verbs</h2>
+
+		<div class="config__filters config__filters-irregulars">
+			<input type="text" class="config__filter config__filter-irregulars" placeholder="Filter by.."></input>
+			<!-- <input type="submit" value="Filter" class="config__send"></input> -->
+		</div>
+	</div>
+
+	<table class="footable irregulars metro-brown " data-filter="#filter" data-page-size="4">
+		<thead>
+			<tr>
+				<th data-toggle="true" class="footable-first-column">
+					Present
+				</th>
+				<th data-hide="phone">
+					Past
+				</th>
+				<th data-hide="phone">
+					Participle
+				</th>
+				<th data-hide="phone, tablet" class="footable-last-column">
+					Definition
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<footer>
+		<a href="http://ckgrafico.github.io/verb-tenses" target="_blank">Verb tenses also for: Browser, Android, Windows Phone, IOS</a>
+	</footer>
+	<!-- JS -->
+	<script src="js/vendor/jquery.1.9.1.js" type="text/javascript"></script>
+	<script src="js/plugins/footable.js" type="text/javascript"></script>
+	<script src="js/plugins/footable.sort.js" type="text/javascript"></script>
+	<script src="js/plugins/footable.filter.js" type="text/javascript"></script>
+	<script src="js/plugins/vex.combined.js"></script>
+	<script>vex.defaultOptions.className = 'vex-theme-plain';</script>
+	<script src="min/all.min.js" type="text/javascript"></script>
+</body>
+</html>
