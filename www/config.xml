@@ -4,8 +4,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "com.ckgrafico.verbtenses"
-	version   = "2.0"
-	versionCode= "50">
+	version   = "2.1"
+	versionCode= "55">
 	<name>Verb Tenses</name>
 	<description>
 		With English verb tenses you can study or use to remember it, check the english verb tenses wherever you want.
@@ -14,6 +14,7 @@
 		CKGrafico
 	</author>
 
+	<preference name="phonegap-version" value="cli-5.2.0" />
 	<preference name="orientation" value="default" />
 	<preference name="fullscreen" value="true" />
 	<preference name="target-device" value="universal" />
